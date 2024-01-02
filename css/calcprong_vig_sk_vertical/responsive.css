@@ -1,0 +1,54 @@
+/* iPAD 2 resolution*/
+
+@media (min-width:1024px){
+    #layout-right{
+        width:300px;
+        max-width:300px;
+    }
+
+}
+
+@media (max-width:1024px){
+    #layout-right{
+        width:auto!important;
+        max-width:none!important
+    }
+	#layout-screen{
+        flex-wrap:wrap
+    }
+	
+	#layout-center {
+		width: 100%;
+	}
+	.sideToggler.toggler-right{
+        display:none!important
+    }
+
+}
+
+@media (max-width:700px){
+	.custom-logo {
+		display: none!important;
+	}
+}
+
+@media (max-width:800px){
+    #layout-right{
+        width:auto!important;
+        max-width:none!important
+    }
+    #layout-screen{
+        flex-wrap:wrap
+    }
+    .sideToggler.toggler-right{
+        display:none!important
+    }
+    .responsiveElement{
+        transition-property:dat-collapse
+    }
+    #statusActions{
+        display:none;
+
+    }
+    
+}

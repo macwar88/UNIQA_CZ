@@ -1,0 +1,80 @@
+#claim-attachments-downloadAll {
+	font-size: 15px!important;
+    border-radius: 4px;
+    padding: 10px!important;
+    padding-right: 10px!important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px!important;
+    border: 1px solid #0069d9;
+	text-decoration: none!important;
+	font-family: Arial,sans-serif;
+	background-color: #007bff;
+	color: white!important;
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+}
+
+#claim-attachments .icon.icon-save {
+	background-image: none!important;
+}
+
+
+
+#claim-attachments-downloadAll:hover {
+    background-color: #0069d9;
+} 
+
+#claim-attachments-downloadAll:before {
+	font-family: 'FontAwesome';
+    content: '\f019';
+	padding-right: 5px;
+    position: relative;    
+}
+
+#claim-attachments > h2, #claim-summary > h2 {
+	background: #173967!important;
+
+}
+
+#claim-attachments i , #claim-summary i{
+	color: white!important;
+}
+
+.iconNG.fas.fa-ellipsis-v::before{
+	color: black!important;
+}
+
+#claim-attachments > h2 > span, #claim-summary > h2 > span{
+	color: white!important;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#claim-attachments i:hover , #claim-summary i:hover{
+	color: orange!important;
+}
+
+.floatingMenu.noBullets li 
+{
+	display: block!important;
+}
+
+#claim-attachments > h2 > span:hover, #claim-summary > h2 > span:hover{
+	color: orange!important;
+	cursor: pointer!important;
+}
+
+#claim-attachments > h2 > span:before {
+	font-family: 'FontAwesome';
+    content: '\f115';
+	padding-right: 5px;
+    position: relative;	
+}
+
+#claim-summary > h2 > span:before {
+	font-family: 'FontAwesome';
+    content: '\f2bc';
+	padding-right: 5px;
+    position: relative;
+	
+}

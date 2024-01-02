@@ -1,0 +1,280 @@
+/* JSON data schovat */
+#customField-control-cr_predamage_prc {
+    display: none;
+}
+
+.digitalni_archiv_tlacitka {
+    display: none;
+}
+
+/*
+#customField-button-printManager {
+    display: none;
+}
+*/
+
+#customField-button-printManager, #customField-button-showProtocolSignature {
+    font-size: 15px!important;
+    border-radius: 4px;
+    padding: 10px!important;
+    padding-right: 10px!important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px!important;
+    border: 1px solid #0069d9;
+    text-decoration: none!important;
+    font-family: Arial,sans-serif!important;
+    background-color: #007bff;
+    color: white!important;
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    cursor: pointer;
+}
+
+#customField-button-printManager:hover, #customField-button-showProtocolSignature:hover {
+    background-color: #0069d9;
+}
+
+#customField-button-printManager:before, #customField-button-showProtocol:before, #customField-button-showProtocolSignature:before {
+    font-family: 'FontAwesome';
+    content: '\f02f';
+    padding-right: 5px;
+    position: relative;
+}
+
+#customField-button-showProtocol {
+    font-size: 15px!important;
+    border-radius: 4px;
+    padding: 10px!important;
+    padding-right: 10px!important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px!important;
+    border: 1px solid silver!important;
+    text-decoration: none!important;
+    font-family: Arial,sans-serif!important;
+    
+    color: black!important;
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    cursor: pointer; 
+}
+
+#customField-button-showProtocol:hover {
+    background-color: #fff;
+}
+
+
+#wrapper-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+#wrapper-2 > .col-oblast {
+    display: flex;
+    width: calc(50% - 32px)!important;
+    float: left;
+}
+
+.col-oblast legend {
+    padding-bottom: 110px;
+}
+
+
+#wrapper-2 > .col-pneu {
+    display: flex;
+    width: 49%!important;
+    float: left;
+    margin-left: 10px;
+}
+
+.col-oblast input{
+    /* float: right; */
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(3); /* IE */
+    -moz-transform: scale(3); /* FF */
+    -webkit-transform: scale(3); /* Safari and Chrome */
+    -o-transform: scale(3); /* Opera */
+    transform: scale(3);
+    padding: 10px;
+}
+
+
+
+/* Vozidlo - směr nárazu */
+
+#customField-control-frri {
+    position: absolute;
+    left: 50px;
+    margin-top: -10px;
+}
+
+#customField-control-siri {
+    position: absolute;
+    left: 215px;
+    margin-top: -10px;
+}
+
+#customField-control-reri {
+    position: absolute;
+    left: 410px;
+    margin-top: -10px;
+}
+
+#customField-control-frce {
+    position: absolute;
+    left: 50px;
+    margin-top: 90px;
+}
+
+#customField-control-rece {
+    position: absolute;
+    left: 410px;
+    margin-top: -90px;
+}
+
+#customField-control-frle {
+    position: absolute;
+    left: 50px;
+    margin-top: 10px;
+}
+
+#customField-control-sile {
+    position: absolute;
+    left: 215px;
+    margin-top: 10px;
+}
+
+#customField-control-rele {
+    position: absolute;
+    left: 410px;
+    margin-top: 10px;
+} 
+
+
+/* pneumatiky */
+
+#customField-button-btnAllWheel, #customField-button-btnTwoAndTwo {
+    font-size: 15px!important;
+    border-radius: 4px;
+    padding: 10px!important;
+    padding-right: 10px!important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px!important;
+    border: 1px solid #0069d9;
+    text-decoration: none!important;
+    font-family: Arial,sans-serif!important;
+    background-color: #007bff;
+    color: white!important;
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    cursor: pointer;
+}
+
+#customField-button-btnAllWheel:hover, #customField-button-btnTwoAndTwo :hover {
+    background-color: #0069d9!important;
+}
+
+#customField-button-btnAllWheel:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    padding-right: 5px;
+    position: relative;
+}
+
+#customField-button-btnTwoAndTwo:before {
+    font-family: 'FontAwesome';
+    content: '\f02f';
+    padding-right: 5px;
+    position: relative;
+}
+
+.col-pneu .control label {
+    display: block!important;
+}
+
+#customField-control-RRMAN, #customField-control-RRSIZE, #customField-control-RRCAP, #customField-control-RLMAN, #customField-control-RLSIZE, #customField-control-RLCAP {
+    margin-left: 150px!important;
+}
+
+
+.comboBox {
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    border-radius: 4px;
+    background-color: #c8eafa29;
+}
+.comboBox-input {
+    height: 33px!important;
+    padding-right: 0px;
+    font-size: 14px!important;
+    box-shadow: none!important;
+}
+
+div#pneu-container {
+    margin-left: 10px;
+}
+
+.comboBox-button {
+    height: 33px!important;
+    border-radius: 4px;
+}
+
+.float {
+    width:25px;
+    display: inline-block;
+    padding-top:67px;
+}
+.odstup {
+    display: inline-block;
+    padding-left:5px;
+}
+
+    /* tlačítka pro signature pad*/
+    .print-customer-signature-button, #customField-button-btn_vypis_z_kalkulace {
+        font-family: Arial,sans-serif !important;
+        font-size: 15px !important;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 5px;
+        transition: all .15s ease-in-out;
+        box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    }
+    #customer-signature-button-reset, #customField-button-btn_vypis_z_kalkulace  {
+        background-color: #EEEEE;
+        color: black!important;
+        border: 1px solid silver!important;
+    }
+    #customer-signature-button-reset:hover, #customField-button-btn_vypis_z_kalkulace:hover {
+        background-color: white;
+        
+    }
+    #customer-signature-button-ok {
+        background-color: #28a745;
+        border: 1px solid silver!important;
+    }
+    #customer-signature-button-ok:hover {
+        background-color: #27c24b;
+    }
+
+    /* #customField-control-podpis_base64 {
+        display: none!important;
+    } */
+
+    .jSignature {
+        background-color: #c8eafa29!important;
+        border-radius: 6px;
+        border: 1px dashed #7F9DB9!important;
+        box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    }
+
+    /* Schovat tlačítko na odeslání podpisu*/
+
+    #customField-button-showProtocolSignature {
+        display: none;
+    }
+
+    /* Nastavení SPO - schování výběru pravidla + zamizeti klikání na díly mimo pravidlo */
+    tr.spoPartRow.suppressed {
+        pointer-events: none!important;
+    }
+
+    div#spoActions {
+        display: none!important;
+    }

@@ -1,0 +1,112 @@
+/*---------------*/
+
+/* Změna barvy rámečků
+.layout-frame .frameHeader {
+	background-color: #173967;
+}
+
+.layout-frame .frameHeader .caption {
+	color: white;
+	font-family: Arial;
+	text-transform: uppercase;
+}
+
+.layout-frame i {
+	color: white;
+}
+*/
+
+
+
+.custom-logo {
+    margin-left: 10px;
+    background-image: url('https://www.myclaim.cz/CalcProNG/dat-logo.png');
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 48px;
+    width: 300px;
+}
+
+/* Změna z důvodu releasu 24.06.2021*/
+.view.view-claim {
+    margin-top: 0px!important;
+}
+
+/* Souhrn kalkulace */
+i.fas.fa-caret-right {
+    color: black!important;
+}
+
+i.fas.fa-caret-left {
+    color: black!important;
+}
+
+
+.nav-toolbar-notification.nav-toolbar-notification-split {
+	display:none!important;
+}
+
+.sideToggler {
+	width: 40px;
+	border-top-left-radius: 10px!important;
+	border-bottom-left-radius: 10px!important;
+	top: 90%!important;
+}
+
+
+#claim-calculations > h2, #claim-history > h2, #claim-calculation > h2 {
+	background: #173967!important;
+
+}
+
+#claim-calculations i, #claim-history i, #claim-calculation i {
+	color: white;
+}
+
+#claim-calculation .buttons {
+	display: none;
+}
+
+#claim-calculations > h2 > span, #claim-history > h2 > span, #claim-calculation > h2 > span {
+	color: white!important;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#claim-calculations i:hover, #claim-history i:hover , #claim-calculation i:hover {
+	color: orange!important;
+}
+
+#claim-calculations > h2 > span:hover, #claim-history > h2 > span:hover, #claim-calculation > h2 > span:hover{
+	color: orange!important;
+	cursor: pointer!important;
+}
+
+#claim-calculations > h2 > span:before, #claim-calculation > h2 > span:before {
+	font-family: 'FontAwesome';
+    content: '\f1ec';
+	padding-right: 5px;
+    position: relative;	
+}
+
+#claim-history > h2 > span:before {
+	font-family: 'FontAwesome';
+    content: '\f017';
+	padding-right: 5px;
+    position: relative;	
+}
+
+.core-quickFilter {
+	display: none;
+}
+
+/* Úprava vzhledu zpráv v historii */
+.entry {
+	margin: 2px!important;
+	/* margin-right: 2px!important; */
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+}
+
+

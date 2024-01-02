@@ -1,0 +1,45 @@
+#vroContractOpeningTab input[type="text"] {
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+	margin-right: 1px;
+}
+
+
+
+
+#vroContractOpeningTab button {
+	border: none;
+}
+
+/* TAB Výběr vozidla schová dočasnou značku  */
+#rowSeasonalLicencePlate {
+	display: none;
+}
+
+/*
+.widget-panelgroup {
+	display: flex;
+	flex-direction: row;
+}
+#pnlVehicleData {
+	display: flex;
+    width: calc(50% - 32px);
+    float: left;
+}
+
+#pnlSearchTree {
+	display: flex;
+    width: calc(50% - 32px);
+    float: left;
+}
+
+@media screen and (max-width: 400px) {
+  .widget-panelgroup {
+    flex-direction: column;
+  } 
+  
+  #wrapper > div {
+    width: 100%;
+    height: auto;
+  }
+}
+*/

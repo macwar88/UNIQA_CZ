@@ -1,0 +1,73 @@
+#customField-control-printCalculationResult, #customField-button-btnRecalculate, #customField-button-btnSpo {
+	font-size: 15px!important;
+    border-radius: 4px;
+    padding: 10px!important;
+    padding-right: 10px!important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px!important;
+    border: 1px solid #0069d9;
+	text-decoration: none!important;
+	font-family: Arial,sans-serif!important;
+	background-color: #007bff;
+	color: white!important;
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+	cursor: pointer;
+}
+
+/*#customField-button-btnSendDa - tlačítko pro českou pojišťovnu*/
+
+#customField-button-btnRecalculate, #customField-button-btnSpo {
+	background-color: #EEE!important;
+	border: 1px solid silver!important;
+	color: black!important;
+}
+
+#customField-button-btnRecalculate:hover, #customField-button-btnSpo:hover {
+	background-color: white!important;
+}
+
+#customField-control-printCalculationResult:hover {
+    background-color: #0069d9;
+} 
+
+
+#customField-control-printCalculationResult:before {
+	font-family: 'FontAwesome';
+    content: '\f02f';
+	padding-right: 5px;
+    position: relative;    
+}
+
+#customField-button-btnRecalculate:before {
+	font-family: 'FontAwesome';
+    content: '\f021';
+	padding-right: 5px;
+    position: relative;   
+}
+
+#customField-button-btnSpo:before {
+	font-family: 'FontAwesome';
+    content: '\f080';
+	padding-right: 5px;
+    position: relative;   
+}
+
+#tab-calculationPreview .padded.ui-state-highlight{
+	display:none!important;
+}
+
+#calculationPreview {
+	border: 1px solid #aaa!important;
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    border-radius: 3px;
+}
+
+#calculationPreview .ui-tabs {
+	padding: 0px!important;
+}
+
+.kalkulace-buttons .control {
+	width: auto;
+}
+
+

@@ -1,0 +1,36 @@
+
+/* posuň memo barva vozidla poznámka na úroveň barvy 
+div#customField-control-vehicle_color_note {
+    margin-top: 85px!important;
+}
+*/
+/* vyrovnat šířku inputu s datem první registrace */
+
+#customField-input-platnost_tk {
+    padding-left: 22px;
+}
+
+
+
+/* Pneumatiky label */
+#pneu-container {
+	/* min-width: 1100px!important; */
+}
+
+#pneu-container .staticText {
+	font-weight: bold!important;
+	width: 120px!important;
+	padding-top: 20px;
+}
+
+#customField-control-naprava_1_right {
+	padding-top: 35px!important;
+}
+
+div#customField-control-vehicle_color span {
+    width: 100%!important;
+}
+
+.col-pneu .control {
+    width: auto;
+}

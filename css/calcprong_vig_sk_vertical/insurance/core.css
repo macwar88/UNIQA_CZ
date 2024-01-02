@@ -1,0 +1,160 @@
+.border {
+    border: 1px solid silver;
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#wrapper {
+    max-width: none!important;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.pt-22 {
+    padding-top: 22px;
+}
+
+.pl-15 {
+    padding-left: 15px!important;
+} 
+
+.w-100 {
+    width: 100px!important;
+}
+
+.w-200 {
+    width: 200px!important;
+}
+
+.w-300 {
+    min-width: 300px!important;
+}
+
+.h-30 {
+    height: 30px;
+}
+
+input.w-100prc, select.w-100prc, textarea.w-100prc {
+    width: 100%!important;
+}
+
+input.w-90prc, select.w-90prc, textarea.w-90prc {
+    width: calc(100% - 35px)!important;
+}
+
+
+/* <line> šířka */
+.control {
+    width: 90%;
+}
+
+/* <line> nechci odsazení nahoře */
+.row {
+    margin-top: 0px!important;
+}
+
+/* Datapicker vzhled */
+
+.hasDatepicker {
+    width: 70px!important;
+}
+
+/* jak mají vypadat povinná pole */
+select.required, input.required {
+	background-color: #FFFFE6!important;
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+	border: 1px solid #7F9DB9;
+	color: #222;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+label.required {
+    font-weight: bold;
+    color:  black;
+}
+
+/* jak má vypadat select */
+select {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+	color:	#222;
+	background-color: #c8eafa29
+}
+
+.control select {
+    height: 33px!important;
+    padding-right: 0px;
+    font-size: 14px!important;
+    /* width: 200px!important; */
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    display: block!important;
+    border-radius: 4px!important;
+    margin-bottom: 4px!important;
+}
+
+/* Jak má vypadat Input */
+.control > input {
+    height: 30px!important;
+    font-size: 14px!important;
+    padding: 0px 12px!important;
+    border-radius: 4px!important;
+    margin-bottom: 5px!important;
+}
+
+
+/* jak má vypadat input media width */
+input.width-medium {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+	background-color:	#c8eafa29;
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+}
+
+input.format-date {
+    display: inline-block!important;
+}
+
+/* jak má vypadat memo */
+textarea {
+    box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+    background-color: #c8eafa29;
+    font-size: 14px!important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    border-radius: 4px!important;
+    margin-bottom: 5px!important;
+    line-height: 1.42857143;
+    padding: 6px 12px;
+}
+
+ /* popiska nad inputem */
+
+.control label {
+    display: block!important;
+}
+
+/* Nastavení fieldsetů - GROUP*/
+
+fieldset.inner {
+	border: 5px solid none;
+	border-radius: 3px;
+}
+
+fieldset.inner legend {
+    font-weight: bold;
+	width: auto;
+	font-size: 20px!important;
+    background: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+.customData .group legend {
+    font-size: 20px!important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}

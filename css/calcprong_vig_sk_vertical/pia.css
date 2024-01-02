@@ -1,0 +1,55 @@
+
+.foreignIFrame {
+	min-height: 50px;
+	height: 50px;
+	/*width: 400px;*/
+	padding: 5px;
+}
+
+#customField-control-crossCalculation .radioControl{
+	padding-left: 15px;
+}
+
+#customField-control-crossCalculation {
+	padding-left: 15px;
+}
+
+#customField-control-crossCalculation {
+	width: 150px!important;
+}
+
+
+#customField-button-btnRecalculate2, #customField-button-btnUniqa {
+	font-size: 15px!important;
+    border-radius: 4px;
+    padding: 10px!important;
+    padding-right: 10px!important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 5px!important;
+    border: 1px solid silver!important;
+	text-decoration: none!important;
+	font-family: Arial,sans-serif;
+	background-color: #EEE;
+	color: black!important;
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+}
+
+
+
+#customField-button-btnRecalculate2:hover, #customField-button-btnUniqa:hover {
+	background-color: white;
+}
+
+#customField-button-btnRecalculate2:before {
+	font-family: 'FontAwesome';
+    content: '\f045';
+	padding-right: 5px;
+    position: relative;    
+}
+
+#customField-button-btnUniqa:before {
+	font-family: 'FontAwesome';
+    content: '\f0ec';
+	padding-right: 5px;
+    position: relative;    
+}

@@ -1,0 +1,235 @@
+.ui-tabs-nav{
+  background-color: #173967!important;
+}
+
+.ui-tabs-nav a {
+	color: white!important;
+	text-transform: uppercase;
+	font-size: 16px!important;
+}
+
+.ui-tabs-nav.ui-widget-header{
+	margin-left: -1px;
+	padding-left: 10px;
+}
+
+.core-tabs {
+    padding: 0px;
+}
+
+.calculationLegend > i {
+	color: white!important;
+}
+
+#claim-templateFrame {
+	padding: 0px!important;
+	border-radius: 4px;
+}
+
+.layout-frame-content {
+    padding: 0px!important;
+}
+
+.ui-state-default{
+	border: 0!important;
+}
+
+
+#layout-left{
+	/*display: none;*/
+}
+
+#claim-quickActions{
+	display: none!important;
+}
+
+#claim-templateFrame > h2 {
+	display: none;
+}
+
+#layout-menu-login{
+	display: none!important;
+}
+#vroContractOpeningTab > ul > li:hover{
+	background-color:transparent !important;
+}
+
+#vroContractOpeningTab > ul > li >a:hover,#customField-button-buttonCalculation:hover{
+	color:orange !important;
+	font-weight: normal!important;
+}
+
+#vroContractOpeningTab > ul > li >a {
+	position:relative;
+	padding: 10px;
+	font-size: 18px!important;
+}
+
+.ui-tabs-tab.ui-state-hover:not(.ui-tabs-active){
+	background:none !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active > a {
+	color: orange !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active > a :hover{
+	color: orange !important;
+}
+
+li.ui-tabs-active:hover{
+	background-color: transparent !important;
+	border: 0;
+	color: white!important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+	border-bottom:3px orange solid!important;
+	background:none!important;
+}
+
+.ui-tabs-tab.ui-state-hover:not(.ui-tabs-active){
+	background:none !important;
+}
+
+/* rámeček v hlavním tabu*/
+.ui-tabs .ui-tabs-panel{
+	border:0px !important;
+}
+
+
+
+/* Ikony k jednotlivím tabům, pozor ID se může měnit proto jsou dvakrát!*/
+/* Zakázka */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(1) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f2ba';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* klient */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(2) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f007';
+	padding-right: 5px;
+    position: relative;
+}
+
+
+/* Výběr vozidla */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(3) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f046';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* Výběr výbavy */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(4) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f0e4';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* Vozidlo */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(5) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f1b9';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* THV */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(6) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f080';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* Sazby */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(7) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f153';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* Výběr dílu */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(8) > a:first-child::before {
+    font-family: 'FontAwesome';
+    content: '\f0ad';
+	padding-right: 5px;
+    position: relative;
+}
+
+
+/* Kalkulace */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(9) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f1ec';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* Protokol */
+#vroContractOpeningTab > .ui-tabs-nav > .ui-tabs-tab:nth-child(10) > a:before {
+    font-family: 'FontAwesome';
+    content: '\f0f6';
+	padding-right: 5px;
+    position: relative;
+}
+
+/* Tlačítka save / Delete / cancel */
+
+/* 
+#layout-menu .buttons {
+    padding: 0;
+    margin: 0 auto;
+    flex: 0 0 auto;
+    position: fixed;
+    z-index: 999;
+	right: 0;
+	background: none;
+	width: 330!important;
+} */
+
+/* lišta úplně nahoře  */
+
+/* ul.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header.stickyItem {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 340px);
+	margin-left: -6px;
+	border-radius: 0px;
+	height: 51px!important;
+	overflow-y: hidden;
+} */ 
+
+/* Tento soubor přidat pokud chceš aktivovat vertikální navbar */
+
+
+#layout-center {
+    margin-left: 210px;
+} 
+
+/* fixuje navbar na stejném místě */
+#vroContractOpeningTab > .ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+    display: block;
+    width: 200px!important;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 55px;
+    border-radius: 0;
+    padding-top: 20px;
+}
+
+.vertical-anchor > ul > li > a {
+    padding: 10px;
+    font-size: 18px !important;
+    display: block !important;
+    width: 200px!important;
+}

@@ -1,0 +1,102 @@
+
+@import "main_bar.css";
+@import "responsive.css";
+@import "VIG_SK/gcp_vertical-nav.css"; 
+@import "calculation.css";
+@import "pia.css";
+@import "modal.css";
+@import "vehicle.css";
+@import "attachment.css";
+@import "core.css";
+@import "INSURANCE/protokol.css";
+@import "INSURANCE/core.css";
+@import "INSURANCE/vozidlo.css";
+@import "INSURANCE/vyber-vozidla.css";
+@import "INSURANCE/klient.css";
+@import "VIG_SK/gcp_calculation.css";
+@import "VIG_SK/gcp_thv.css";
+
+/* Tento styl byl vložen přímo v myClaim */
+
+    /* Komentáře na stránce obecné údaje sirku na 100% 
+    #customField-control-notes, 
+    #customField-control-dalsi_informace,
+    #customField-control-upresneni_mt,
+    #customField-control-popisPriciny,
+    #customField-control-spoluucast_dle_ps,
+    #customField-control-ujednani_ps,
+    #customField-control-vybava_ps,
+    #customField-control-poznamka_do_zapisu,
+    #customField-control-poznamka_interni {
+        width: 100%;
+    }
+    
+    textarea#customField-input-notes, 
+    textarea#customField-input-dalsi_informace,
+    textarea#customField-input-upresneni_mt,
+    textarea#customField-input-popisPriciny,
+    textarea#customField-input-spoluucast_dle_ps,
+    textarea#customField-input-ujednani_ps,
+    textarea#customField-input-vybava_ps,
+    textarea#customField-input-poznamka_do_zapisu,
+    textarea#customField-input-poznamka_interni {
+        width: 100%;
+    } */
+   
+
+
+    /* Identifikace vozidla - schová řádek s fotografiemi vozidla*/
+    #picturesRow {
+        display: none!important;
+    }
+
+    .vin-hidden {
+        display: none!important;
+    }
+
+    /* LAbel má moc velký margin na spodku - AX má pouze 5px */
+    .customData label {
+        margin-bottom: 5px!important;
+    }
+
+    /* Požadavky mobilních techniků - velikost */
+
+    label {
+        font-size: 14px;
+        font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+
+    /* obecné údaje - úprava*/
+    #customField-control-c_pripadu, #customField-control-c_podpripadu, 
+    #customField-control-pojistovna {
+        display: none;
+    }
+
+    /* GRID system - https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .column-25 {
+        float: left;
+        width: 25%; 
+    }
+
+    .column-33 {
+        float: left;
+        width: 33%; 
+    }
+
+    @media screen and (max-width: 750px) {
+        .column {
+            width: 100%;
+        }
+    }

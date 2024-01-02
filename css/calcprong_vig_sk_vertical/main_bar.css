@@ -1,0 +1,99 @@
+#layout-header{
+	display: none!important;
+}
+
+.buttons.rightButtons.singleRow{
+	float: right;	
+}
+
+.nav-toolbar-header-div {
+	display: none!important;
+}
+
+#layout-right {
+	display: block;
+}
+#layout-menu {
+	overflow: auto;
+	display: block;
+}
+
+
+#hamburger {
+	display: none;
+}
+
+.core-button{
+	font-size: 15px!important;
+	border-radius: 4px;
+	padding: 10px!important;
+	padding-right: 10px!important;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	margin: 5px!important;
+	box-shadow: 0 1px 2px 0 rgba(29,31,58,.18);
+}
+
+.core-button:focus{
+	box-shadow: 0 0 0 0.1rem rgba(72,97,180,.5);
+}
+
+#claim-saveDraft{
+	background-color: #28a745!important;
+}
+
+.core-button.disabled {
+	opacity: .2!important;
+}
+
+#claim-saveDraft:before {
+    font-family: 'FontAwesome';
+    content: '\f0c7';
+	padding-right: 5px;
+    position: relative;
+
+}
+
+.deleteClaim{
+	background-color: #dc3545!important;
+}
+
+.deleteClaim:hover {
+	background-color: red!important;
+}
+
+.deleteClaim:before {
+    font-family: 'FontAwesome';
+    content: '\f014';
+	padding-right: 5px;
+    position: relative;
+}
+
+.core-button-cancel:before {
+	font-family: 'FontAwesome';
+    content: '\f112';
+	padding-right: 5px;
+    position: relative;
+}
+
+.core-button-cancel {
+	cursor: pointer!important;
+}	
+
+.nav-toolbar-split-left {
+	display: none!important;
+}
+
+.nav-toolbar-split-right {
+	display: none!important;
+}
+.has-nav-toolbar-split{
+	margin: 0px;
+}
+
+
+/* Schovat tlačítko vymazat*/
+
+.deleteClaim {
+	display:none!important;
+}
+
