@@ -277,7 +277,9 @@ div[id^="graPaActRc"][id$="R"] {
 #extSelworkTypeRow,
 #extSelworkTimeTypeRow,
 #extSelpartialLacqueringRow,
-#extSellacquerFinishRow {
+#extSellacquerFinishRow,
+#extSelpriceCorrectionRow,
+#extSeldiscountRow {
   display: none;
 }
 

@@ -119,7 +119,7 @@ $(document).ready(function () {
 	}
 
 	// Klik na sazby - Logika výběru sazeb
-	$( "a[href='#tab-activityRelatedSelection2']" ).click( function (event) {
+	$( "a[href='#tab-activityRelatedSelection']" ).click( function (event) {
 		
 
 		if (window.sazbyInterval) clearInterval(window.sazbyInterval);
