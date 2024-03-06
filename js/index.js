@@ -19,6 +19,20 @@ ApiMyclaim.addXMLRequestCallback(function (xhr) {
           addVatPrice();
         }, 250);
       }
+
+      if (
+        xhr.responseURL.includes("/myClaim/json/calculations/CalculateOptimized")
+      ) {
+        let spareParts = data.data.calculation.spareParts;
+        spareParts = JSON.stringify(compileSpoSpareParts(spareParts));
+        $('#customField-input-SPO_last_selection').val(spareParts);
+        $('#customField-input-SPO_last_selection').trigger('change');
+        setTimeout(() => {
+          module.activeView.saveAllTemplates();  
+        }, 250);
+        
+        
+      }
     }
   };
 });
@@ -49,13 +63,34 @@ function addVatPrice() {
       '</p><p class="netto">' +
       priceNetto +
       "</p>";
-    console.log(priceNetto + " / " + priceBrutto);
+    // console.log(priceNetto + " / " + priceBrutto);
     if (priceBrutto != "NaN") {
       $(this).html(priceHtml);
     }
   });
 }
 
+// this function return spare parts selected for SPO calculation
+// items with spNumber = NULL => Opravárenská sada => parent item for group of child items
+function compileSpoSpareParts(spareParts) {
+  let jsonData = [];
+
+  spareParts.forEach(element => {
+    let item = {};
+
+    item.dvn = element.dvn;
+    item.spNumber = element.spNumber;
+    item.unitPrice = element.unitPrice;
+    item.calculation_Id = element.calculation_Id;
+    item.partPriceState = element.partPriceState; // expecting @ or null
+
+    jsonData.push(item)
+  });
+
+  //console.log('Toto je výběr SPO: ', jsonData);
+  return jsonData;
+
+}
 $(document).ready(function () {
   setTimeout(function () {
     // Pridavani elementu <form> pro umozneni autofill-u v sekci Klient
