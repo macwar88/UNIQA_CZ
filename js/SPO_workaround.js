@@ -5,8 +5,13 @@ const spo_observe_callback = (mutationsList) => {
       if (mutation.addedNodes[0].id == "sparePartsTable") {
         console.log("Bylo kliknuto na díl a otevřel se dialog");
 
+        if ( typeof nahrajPosledniVyber === 'undefined') {
+          window.nahrajPosledniVyber = "Nahraj poslední výběr";
+        }
+          
+
         setTimeout(function () {
-          let button = '<button type="button" class="ui-button ui-corner-all ui-widget" id="spo-btn-loadHistory">Nahraj poslední výběr</burron>';
+          let button = '<button type="button" class="ui-button ui-corner-all ui-widget" id="spo-btn-loadHistory">' + nahrajPosledniVyber + '</button>';
           $('div[aria-describedby="dialogSPOParts"] .ui-dialog-buttonset').prepend(button);
 
           setTimeout(() => {
