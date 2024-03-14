@@ -139,7 +139,13 @@ const getCleanPrice = (element) => {
 
 // @elementId = id of memo where JSON data of history are placed
 const loadHistory = (elementId = "#customField-input-SPO_last_selection") => {
-  let jsondData = JSON.parse($(elementId).val());
+  try {
+    var jsondData = JSON.parse($(elementId).val());
+  } catch (error) {
+    console.log("Vstupní data jsou NULL nebo nejsou ve formátu JSON")
+    return;
+  }
+
 
   jsondData.forEach(el => {
 
