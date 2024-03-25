@@ -248,8 +248,8 @@ $("a[href*=tab-graphicalPartSelection]").click(function () {
               console.log("elSnap.height: " + roundSize(elSnap.style.height));
               // elSvg.style.shapeRendering = "cripsEdges";
   
-              elSvg.style.width = roundSize(elSnap.style.width);
-              elSvg.style.height = roundSize(elSnap.style.height);
+              elSvg.style.width = roundSize(elSnap.style.width) == '0px' ? roundSize(elSvg.style.width) : roundSize(elSnap.style.width); // bugfix for first touchmove
+              elSvg.style.height = roundSize(elSnap.style.height) == '0px' ? roundSize(elSvg.style.height) : roundSize(elSnap.style.height); // bugfix for first touchmove
             });
   
             // Override with touchmove, which is triggered only on move
