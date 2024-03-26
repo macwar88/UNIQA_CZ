@@ -1,5 +1,6 @@
 // -- XHR listener
 ApiMyclaim.addXMLRequestCallback(function (xhr) {
+  
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       try {
@@ -20,6 +21,7 @@ ApiMyclaim.addXMLRequestCallback(function (xhr) {
         }, 250);
       }
 
+      // odposlech pro vytvoření optimalizované kalkulace
       if (
         xhr.responseURL.includes("/myClaim/json/calculations/CalculateOptimized")
       ) {
@@ -30,8 +32,15 @@ ApiMyclaim.addXMLRequestCallback(function (xhr) {
         setTimeout(() => {
           module.activeView.saveAllTemplates();  
         }, 250);
-        
-        
+      }
+
+      // odposlech předoptimalizačních dat - uživatel klikne na tlačítko Vytvořit AND kalkulaci
+      if (
+        xhr.responseURL.includes("/myClaim/json/calculations/PreOptimize")
+      ) {
+        window.preOptimizedData = data.data.parts;
+        console.log("PreOptimieze data: ", window.preOptimizedData = data.data.parts);
+
       }
     }
   };

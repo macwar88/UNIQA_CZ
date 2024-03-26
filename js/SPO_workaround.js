@@ -9,16 +9,38 @@ const spo_observe_callback = (mutationsList) => {
           window.nahrajPosledniVyber = "Nahraj poslední výběr";
         }
           
-
+        // Dialog has been generated
         setTimeout(function () {
+          // creating button
           let button = '<button type="button" class="ui-button ui-corner-all ui-widget" id="spo-btn-loadHistory">' + nahrajPosledniVyber + '</button>';
           $('div[aria-describedby="dialogSPOParts"] .ui-dialog-buttonset').prepend(button);
 
+          // add event to created button
           setTimeout(() => {
             $('#spo-btn-loadHistory').click(function() {
               loadHistory();
             })
           }, 250);
+
+          // Trigger LKQ logic
+          if ( typeof preOptimizedData !== 'undefined') {
+            
+            let clickThisSp = lkqPremium(preOptimizedData);
+
+            clickThisSp.forEach(el => {
+              let row = $('.field-partNo').filter(function() {
+                return $(this).text() === el;
+              });   
+              
+              row = row.parent();
+
+              row.click();
+              row.attr('style','background-color: #f1fff3!important');
+            });
+            // console.log(" Tyhle díly bych měl oklikat", lkqPremium(preOptimizedData));
+          } else {
+            console.log("preOptimizedData nejsou definována!");
+          }
 
         }, 250);
       }
@@ -177,7 +199,7 @@ const loadHistory = (elementId = "#customField-input-SPO_last_selection") => {
 
         if( !rowChecked && rowPrice == el.unitPrice && rowSpNum == el.spNumber) {
           row.click();
-          row.attr('style','background-color: yellow!important');
+          row.attr('style','background-color: #ffffe0!important');
         }
     }
 
@@ -186,6 +208,38 @@ const loadHistory = (elementId = "#customField-input-SPO_last_selection") => {
   });
 }
 
+// LKQ platinum plus rules
+// @PreOptimizedData = data returned from /myClaim/json/calculations/PreOptimize; 
+const lkqPremium = (preOptimiezeData) => {
+
+  // display loading animation
+  module.waitingOverlay(true);
+ 
+  var jsonData = preOptimiezeData;
+  var clickThis = []
+
+  // iteration over main spareparts (OEM)
+  jsonData.forEach(oem => {
+    
+    // restart clicked checking
+    var clicked = false;
+    
+    // iteration over AFT spareparts
+    oem.amParts.forEach(aft => {
+
+      if( clicked == false && aft.suppressed == null && aft.manufacturer == "PLATINUM PLUS") {
+        clicked = true;
+        clickThis.push(aft.amNumber);
+      }
+
+    })
+
+  })
+  // hide loading animation
+  module.waitingOverlay(false);
+  
+  return clickThis;
+}
 
 //HELPER
 
